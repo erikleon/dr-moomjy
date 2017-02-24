@@ -1,0 +1,134 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Maureen Moomjy MD. FACOG
+email: your-email@.com
+description: > # this means to ignore newlines until "navigation:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+navigation:
+  - 0:
+    title: Home
+    slug: /#home
+  - 1:
+    title: About
+    slug: /#about
+  - 2:
+    title: Videos
+    slug: /#videos
+  - 3:
+    title: Forms & Resources
+    slug: /#forms
+  - 4:
+    title: Request Appointment
+    slug: /#request
+hero_image: hero.jpg
+hero_copy: > # this means to ignore newlines until "baseurl:"
+  <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Morbi id est orci.
+  Etiam eu condimentum velit, a sodales velit. Nunc bibendum magna euismod sapien sodales consectetur.
+  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+  Donec eget mauris suscipit, blandit lorem eu, viverra odio.
+  Aliquam erat volutpat.
+  Praesent sed nibh at libero convallis auctor.
+  Nulla rutrum nec dolor quis consequat.
+about_title: Dr. Maureen Moomjy
+about_copy: >
+  Dr. Moomjy pursued a unique and rewarding journey in the development of her career of Reproductive Medicine and Infertility and Gynecology. After completing her Master of Arts Degree in Developmental Disabilities at New York University, she proceeded to work fours years in a Brooklyn Hospital and then completed her Medical Degree, cum laude, at the State University of New York, Brooklyn. She received a distinction in research through her lab studies dedicated to analyzing neuroreceptors and neurotransmitters and how they could be manipulated to treat a specific neurological disease, Myasthenia Gravis.<br><br>
+  Dr. Moomjy recognizes that a patient with a fertility problem or a hormonal problem is under substantial stress; often having consulted more than one physician in the process. Yet, her philosophy is that a successful outcome is usually achievable with dedication, perseverance, and medical expertise.
+location_title: Location
+location_address: >
+  555 55th Street, Suite 555
+  New York, NY 55555
+location_fax: 555-555-555
+location_phone: 555-555-555
+location_hours: >
+  monday    9:00am - 4:00pm<br>
+  tuesday   9:00am - 4:00pm<br>
+  wednesday 9:00am - 4:00pm<br>
+  thursday  9:00am - 4:00pm<br>
+  friday    9:00am - 4:00pm<br>
+  sunday    9:00am - 4:00pm<br>
+  saturday  9:00am - 4:00pm<br>
+videos_title: Videos
+videos_subtitle: Sub Title
+videos:
+  - 0:
+    title: Example
+    thumb: video_1_thumb.jpg
+    src: example.mp4
+  - 1:
+    title: Example 1
+    thumb: video_2_thumb.jpg
+    src: example.mp4
+  - 2:
+    title: Example 2
+    thumb: video_3_thumb.jpg
+    src: example.mp4
+forms_title: Forms & Resources
+forms:
+  - 0:
+    title: Patient Information Form
+    src: example.pdf
+  - 1:
+    title: Review of Systems Form
+    src: example.pdf
+  - 2:
+    title: Review of Systems Form
+    src: example.pdf
+  - 3:
+    title: Review of Systems Form
+    src: example.pdf
+  - 4:
+    title: Review of Systems Form
+    src: example.pdf
+  - 5:
+    title: Review of Systems Form
+    src: example.pdf
+  - 6:
+    title: Review of Systems Form
+    src: example.pdf
+  - 7:
+    title: Review of Systems Form
+    src: example.pdf
+request_title: Request an Appointment
+footer_navigation:
+  - 0:
+    title: Hours and Location
+    target: _self
+    slug: /#about
+  - 1:
+    title: Patients Rights and Responsibilities
+    target: _blank
+    slug: /pdfs/example.pdf
+  - 2:
+    title: Terms of Use
+    target: _self
+    slug: /terms-of-use/
+  - 3:
+    title: Privacy Policy
+    target: _self
+    slug: /privacy-policy/
+  - 4:
+    title: HIPPA Information
+    target: _blank
+    slug: https://www.hhs.gov/hipaa/
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://local.maureenmoomjy.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+exclude:
+  - "bower.json"
