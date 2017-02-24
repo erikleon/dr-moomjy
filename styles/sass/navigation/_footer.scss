@@ -1,0 +1,27 @@
+footer {
+  position: relative;
+  background-color: $purple;
+  background-image: url(../../images/footer.jpg);
+  background-size: cover;
+  color: $white;
+  padding: 50px 0;
+  position: relative;
+
+  .navigation-list {
+    li {
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  .copyright {
+    background-color: rgba(0,0,0,0.3);
+    font-size: 12px;
+    padding: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0
+  }
+}
