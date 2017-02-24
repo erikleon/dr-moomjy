@@ -1,0 +1,28 @@
+<footer>
+  <div class="container">
+    <div class="logo">
+      <img src="/images/logo-white.png">
+    </div>
+    <ul class="navigation-list">
+      {% for nav in site.footer_navigation %}
+        <li><a href="{{ nav.slug }}" target="{{ nav.target }}">{{ nav.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+  <div class="copyright">
+    <div class="container">&copy; 2017 Maureen Moomjy, pc</div>
+  </div>
+</footer>
+<div class="overlay">
+  <div class="container">
+    <div class="close"></div>
+    <video controls>
+      <source src="/videos/example.mp4" type="video/mp4">
+    </video>
+  </div>
+</div>
+<script type="text/javascript">
+  var main = document.createElement('script');
+  main.setAttribute('src','/js/main.js?v='+Math.floor(Math.random()*1000000));
+  document.head.appendChild(main);
+</script>

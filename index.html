@@ -1,0 +1,72 @@
+---
+layout: default
+name: DR. Maureen Moomjy
+title: DR. Maureen Moomjy
+---
+<section id="home" class="hero home">
+  <div class="container">
+    <div class="floating-box">{{ site.hero_copy }}<a href="/#request">REQUEST AN APPOINTMENT</a></div>
+  </div> <!-- .container -->
+</section>
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-copy">
+      <h1 class="section-title extrabold">{{ site.about_title }}</h1>
+      <p>{{ site.about_copy }}<p>
+    </div>
+    <div class="location">
+      <h1 class="section-title">{{ site.location_title }}</h1>
+      <div>{{ site.location_address }}</div>
+      <div><span>f.</span>{{ site.location_fax }}</div>
+      <div><span>p.</span>{{ site.location_phone }}</div>
+      <a class="map" target="_blank" href="" ></a>
+      <h1 class="section-title">office hours</h1>
+      <div class="hours">{{ site.location_hours }}</div>
+    </div>
+  </div> <!-- .container -->
+</section>
+<section id="videos" class="videos">
+  <div class="container">
+    <h1 class="section-title">{{ site.videos_title }}</h1>
+    <h3 class="section-subtitle">{{ site.videos_subtitle }}</h3>
+    <div class="carousel">
+      {% for item in site.videos %}
+        <div class="item">
+          <img src="/images/{{ item.thumb  }}" data-src="/videos/{{ item.src }}" alt="{{ item.title }}">
+          <div class="play">
+            <div class="btn"></div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+
+  </div> <!-- .container -->
+</section>
+<section id="forms" class="forms">
+  <div class="container">
+    <h1 class="section-title">forms &amp; resources</h1>
+    <ul>
+      {% for form in site.forms %}
+        <li>
+          <h1>{{ form.title }}</h1>
+          <a href="{{ form.src }}">download ></a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div> <!-- .container -->
+</section>
+<hr>
+<section id="request" class="request">
+  <div class="container">
+    <h1 class="section-title">request an appointment</h1>
+    <form action="https://formspree.io/ekarwatowski@gmail.com" method="POST">
+      <label for="name">Name</label>
+      <input type="text" name="name">
+      <label for="phone">Telephone</label>
+      <input type="tel" pattern="^\d{4}-\d{3}-\d{4}$" name="phone" required >
+      <input type="email" name="_replyto" required="">
+      <input type="date" name="date" required>
+      <input type="submit" value="Submit">
+  </form>
+  </div> <!-- .container -->
+</section>
