@@ -11,6 +11,10 @@ html, body {
   box-sizing: border-box;
 }
 
+.noscroll {
+  overflow: hidden;
+}
+
 .container {
   position: relative;
   max-width: 100%;
@@ -20,6 +24,7 @@ html, body {
 
   @media (max-width: 1024px) {
     width: 768px;
+    padding: 0 30px;
   }
 }
 
@@ -28,21 +33,10 @@ html, body {
   position: relative;
 
   hr {
-    width: 1440px;
-    max-width: 100%;
+    width: 768px;
+    max-width: 90%;
     margin: 0 auto;
 
-    @media (max-width: 1440px) {
-      width: 1024px
-    }
-
-    @media (max-width: 1024px) {
-      width: 768px
-    }
-
-    @media (max-width: 768px) {
-      width: 415px
-    }
   }
 
   section {
@@ -56,11 +50,19 @@ html, body {
     .section-title {
       color: $purple;
       font-style: italic;
+      text-align: center;
+      margin: 0 0 20px 0;
+      font-size: 22px;
 
       &.extrabold {
         font-style: normal;
         font-weight: 800;
       }
+    }
+
+    .section-subtitle {
+      text-align: center;
+      margin: 0 0 20px 0;
     }
 
     &.home {
@@ -88,6 +90,7 @@ html, body {
           padding: 50px;
           background-color: $purple_rgba;
           color: $white;
+          text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
 
           @media (max-width: 768px) {
             width: 100%;
@@ -107,10 +110,48 @@ html, body {
 
     &.about {
       .container {
-        .about-copy {
+        @include display-flex();
+        @include flex-direction(row);
 
+        .about-copy {
+          @include flex-grow(1);
+          width: 75%;
+          font-size: 17px;
+          padding: 0 30px 0 0;
+
+          .section-title {
+            text-align: left;
+            font-size: 22px;
+          }
+
+          p {
+            line-height: 1.2em;
+          }
         }
         .location {
+          @include flex-grow(1);
+          width: 25%;
+          background-color: $light-grey;
+          border-bottom: 3px solid $dark-grey;
+          border-radius: 3px;
+          font-size: 12px;
+          padding: 20px 35px;
+
+          .section-title {
+            font-size: 16px;
+            text-align: left;
+            margin: 0 0 5px 0;
+          }
+
+          .map {
+            display: block;
+            margin: 20px 0;
+
+            img {
+              max-width: 100%;
+            }
+
+          }
 
         }
       }
@@ -120,6 +161,10 @@ html, body {
       background-image: url(../../images/pink-bg.jpg);
       background-position: center;
       background-size: cover;
+
+      .section-title {
+        margin: 5px 0 0 0;
+      }
 
       .carousel {
         .slick-track {
@@ -171,15 +216,52 @@ html, body {
         height: 100%;
 
         ul {
-          li {
+          @include display-flex();
+          @include flex-wrap(wrap);
 
+          li {
+            @include flex-grow(1);
+            width: 45%;
+            padding: 20px 0;
+            display: block;
+            border-bottom: 1px solid $light-grey;
+
+            &:nth-child(odd) {
+              margin: 0 5% 0 0;
+            }
+
+            &:nth-child(even) {
+              margin: 0 0 0 5%;
+            }
+
+            h1 {
+              color: $grey;
+              font-weight: 800;
+              font-size: 22px;
+              margin: 0 0 5px 0;
+            }
+
+            a {
+              color: $pink;
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
           }
+        }
+
+        .injection-training {
+          text-align: center;
+          max-width: 100%;
         }
       }
 
     }
 
     &.request {
+
 
       form {
         max-width: 320px;
@@ -208,10 +290,18 @@ html, body {
   z-index: 9999;
   top: 0;
   bottom: 0;
+  overflow: hidden;
 
   &.active {
     display: block;
 
+  }
+
+  .close {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: $purple;
   }
 }
 
