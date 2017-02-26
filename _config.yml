@@ -48,7 +48,7 @@ about_title: Dr. Maureen Moomjy
 about_copy: >
   Dr. Moomjy pursued a unique and rewarding journey in the development of her career of Reproductive Medicine and Infertility and Gynecology. After completing her Master of Arts Degree in Developmental Disabilities at New York University, she proceeded to work fours years in a Brooklyn Hospital and then completed her Medical Degree, cum laude, at the State University of New York, Brooklyn. She received a distinction in research through her lab studies dedicated to analyzing neuroreceptors and neurotransmitters and how they could be manipulated to treat a specific neurological disease, Myasthenia Gravis.<br><br>
   Dr. Moomjy recognizes that a patient with a fertility problem or a hormonal problem is under substantial stress; often having consulted more than one physician in the process. Yet, her philosophy is that a successful outcome is usually achievable with dedication, perseverance, and medical expertise.
-location_title: Location
+location_title: location
 location_address: >
   555 55th Street, Suite 555
   New York, NY 55555
@@ -62,8 +62,8 @@ location_hours: >
   friday    9:00am - 4:00pm<br>
   sunday    9:00am - 4:00pm<br>
   saturday  9:00am - 4:00pm<br>
-videos_title: Videos
-videos_subtitle: Sub Title
+videos_title: videos
+videos_subtitle: sub title
 videos:
   - 0:
     title: Example
