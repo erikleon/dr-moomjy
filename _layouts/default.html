@@ -3,7 +3,7 @@
 
   {% include head.html %}
 
-  <body>
+  <body class="{{ page.title | downcase | replace: ' ', '-' }}">
 
     <div class="main">
       {% include header.html %}

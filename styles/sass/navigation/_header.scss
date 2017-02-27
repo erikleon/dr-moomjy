@@ -5,6 +5,7 @@ nav {
   top: 0;
   padding: 20px;
   @include background-image(linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%));
+  background-color: $purple;
 
 
   .container {
@@ -72,7 +73,6 @@ nav {
 
     .navigation-list {
       width: 100%;
-      max-width: 1024px;
       z-index: 3;
       color: $white;
       font-weight: 600;
@@ -98,10 +98,6 @@ nav {
 
       }
 
-      @media (max-width: 1024px) {
-        max-width: 720px;
-      }
-
       @media (max-width:768px) {
 
         max-height: 0;
@@ -118,5 +114,11 @@ nav {
 
       }
     }
+  }
+}
+
+.dr-maureen-moomjy {
+  nav {
+    background-color: transparent;
   }
 }

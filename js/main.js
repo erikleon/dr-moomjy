@@ -3,6 +3,8 @@
   var moomjy_js = {
     init: function () {
 
+      moomjy_js.formInit();
+
       moomjy_js.carouselHandler();
       moomjy_js.carouselInit();
 
@@ -88,6 +90,13 @@
 
       };
       $('.carousel').slick($args);
+    },
+    formInit: function () {
+      $( ".datepicker input" ).datepicker({
+        buttonImage: "/images/calendar-icon.png",
+        autoSize: true,
+        showOn: "both"
+      });
     }
   };
   moomjy_js.init();

@@ -23,6 +23,10 @@ html, body {
   @include transition(width 250ms ease-in-out);
 
   @media (max-width: 1024px) {
+    width: 960px;
+  }
+
+  @media (max-width: 960) {
     width: 768px;
     padding: 0 30px;
   }
@@ -115,7 +119,7 @@ html, body {
 
         .about-copy {
           @include flex-grow(1);
-          width: 75%;
+          width: 70%;
           font-size: 17px;
           padding: 0 30px 0 0;
 
@@ -130,7 +134,7 @@ html, body {
         }
         .location {
           @include flex-grow(1);
-          width: 25%;
+          width: 30%;
           background-color: $light-grey;
           border-bottom: 3px solid $dark-grey;
           border-radius: 3px;
@@ -150,9 +154,7 @@ html, body {
             img {
               max-width: 100%;
             }
-
           }
-
         }
       }
     }
@@ -202,10 +204,8 @@ html, body {
               width: 100%;
               @include box-shadow(3px 3px 4px 5px rgba(0,0,0,0.4));
             }
-
           }
         }
-
       }
     }
 
@@ -257,18 +257,137 @@ html, body {
           max-width: 100%;
         }
       }
-
     }
 
     &.request {
 
+      .container {
+        @include display-flex();
+        @include align-items(center);
+        @include flex-direction(column);
 
-      form {
-        max-width: 320px;
-        background-color: $pink;
-        border-radius: 5px;
+        form {
+          padding: 40px;
+          background-color: $pink;
+          border-radius: 5px;
+          width: 75%;
+          min-width: 300px;
+          text-align: center;
 
+          .group {
+            position:relative;
+            margin-bottom:45px;
 
+            input {
+              background-color: $pink;
+              font-size: 18px;
+              padding: 10px 10px 10px 5px;
+              display: block;
+              width: 100%;
+              border: none;
+              border-bottom: 1px solid $white;
+
+              &:focus {
+                outline: none;
+              }
+
+            }
+
+            label {
+              color: $white;
+              font-size: 18px;
+              font-weight: normal;
+              position: absolute;
+              pointer-events: none;
+              left: 5px;
+              top: 10px;
+              @include transition(0.2s ease all);
+            }
+
+            input:focus ~ label,
+            input:valid ~ label     {
+              top: -20px;
+              font-size: 14px;
+              color: $purple;
+            }
+
+            .bar {
+              position: relative;
+              display: block;
+              width: 100%;
+
+              &:before,
+              &:after   {
+                content: '';
+                height: 3px;
+                width: 0;
+                bottom: 1px;
+                position: absolute;
+                background: $purple;
+                @include transition(0.2s ease all);
+              }
+
+              &:before {
+                left: 50%;
+              }
+
+              &:after {
+                right: 50%;
+              }
+            }
+
+            /* active state */
+            input:focus ~ .bar:before,
+            input:focus ~ .bar:after {
+              width: 50%;
+            }
+
+            &.datepicker {
+
+              input {
+                padding: 10px 10px 10px 60px;
+              }
+
+              label {
+                left: 60px;
+              }
+
+              input:focus ~ label,
+              input:valid ~ label {
+                left: 5px;
+              }
+
+              button.ui-datepicker-trigger {
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: transparent;
+                border: none;
+              }
+
+            }
+
+            ::-webkit-datetime-edit {
+
+            }
+
+            ::-webkit-calendar-picker-indicator {
+              display: block;
+              background-image: url(/images/calendar-icon.png);
+            }
+          }
+
+          input[type=submit] {
+            padding: 30px 40px;
+            background-color: $dark-pink;
+            border: none;
+            border-radius: 4px;
+            color: $white;
+            font-size: 18px;
+            text-transform: lowercase;
+            cursor: pointer;
+          }
+        }
       }
     }
 
@@ -277,8 +396,6 @@ html, body {
       z-index: 0;
     }
   }
-
-
 }
 
 .overlay {
