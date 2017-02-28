@@ -237,11 +237,11 @@ html, body {
             line-height: 1.2em;
 
             span {
+              @include flex-shrink(1);
               @include flex-grow(1);
-              min-width: 50%;
+              width: 50%;
 
               &:nth-child(even) {
-                @include flex-shrink(1);
                 @include align-self(flex-end);
 
               }
@@ -450,7 +450,15 @@ html, body {
 
         .injection-training {
           text-align: center;
-          max-width: 100%;
+
+          a {
+            display: block;
+            max-width: 100%;
+
+            img {
+              max-width: 100%;
+            }
+          }
         }
       }
     }
