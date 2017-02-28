@@ -3,10 +3,11 @@
   var moomjy_js = {
     init: function () {
 
-      moomjy_js.formInit();
+
 
       moomjy_js.carouselHandler();
       moomjy_js.carouselInit();
+      moomjy_js.formInit();
 
       moomjy_js.overlayHandler();
 
@@ -46,7 +47,7 @@
       $('.overlay video').load();
     },
     overlayHandler: function () {
-      $('.item.slick-active img').on('click', function() {
+      $('.item.slick-active .play svg').on('click', function() {
         moomjy_js.videoHandler($(this).data('src'));
         moomjy_js.overlayToggle();
       });
@@ -79,14 +80,27 @@
     },
     carouselInit: function () {
       $args = {
+        draggable: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '20%',
+        centerPadding: '30%',
         dots: true,
         speed: 300,
         arrows: true,
+        customPaging: function(slider, i) {
+          var thumb = $(slider.$slides[i]).data();
+          return '<span>&mdash;</span>';
+        },
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              centerPadding: '0',
+            }
+          }
+        ],
 
       };
       $('.carousel').slick($args);
