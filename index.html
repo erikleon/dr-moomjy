@@ -5,20 +5,22 @@ title: Dr Maureen Moomjy
 ---
 <section id="home" class="hero home">
   <div class="container">
-    <div class="floating-box">{{ site.hero_copy }}<a href="/#request">REQUEST AN APPOINTMENT</a></div>
+    <div class="floating-box">{{ site.hero_copy }}<a href="/#request">REQUEST AN APPOINTMENT ></a></div>
   </div> <!-- .container -->
 </section>
 <section id="about" class="about">
   <div class="container">
     <div class="about-copy">
       <h1 class="section-title extrabold">{{ site.about_title }}</h1>
-      <p>{{ site.about_copy }}<p>
+      <p>{{ site.about_copy }}</p>
     </div>
     <div class="location">
       <h1 class="section-title">{{ site.location_title }}</h1>
-      <div>{{ site.location_address }}</div>
-      <div><span>f.</span>{{ site.location_fax }}</div>
-      <div><span>p.</span>{{ site.location_phone }}</div>
+      <div class="info">
+        <div class="address">{{ site.location_address }}</div>
+        <div class="fax"><span>f.</span>{{ site.location_fax }}</div>
+        <div class="phone"><span>p.</span>{{ site.location_phone }}</div>
+      </div>
       <a class="map" target="_blank" href="https://www.google.com/maps">
         <img src="/images/map.jpg" alt="Google Maps Insert">
       </a>
@@ -34,9 +36,12 @@ title: Dr Maureen Moomjy
     <div class="carousel">
       {% for item in site.videos %}
         <div class="item">
-          <img src="/images/{{ item.thumb  }}" data-src="/videos/{{ item.src }}" alt="{{ item.title }}">
+          <img src="/images/{{ item.thumb  }}" alt="{{ item.title }}">
           <div class="play">
-            <div class="btn"></div>
+            <svg height="100px" width="100px" viewBox="0 0 200 200" alt="Play video" data-src="/videos/{{ item.src }}">
+              <circle cx="100" cy="100" r="90" fill="none" stroke-width="5" stroke="#fff"></circle>
+              <polygon points="70, 55 70, 145 145, 100" fill="none" stroke-width="5" stroke="#fff"></polygon>
+            </svg>
           </div>
         </div>
       {% endfor %}
@@ -51,7 +56,7 @@ title: Dr Maureen Moomjy
       {% for form in site.forms %}
         <li>
           <h1>{{ form.title }}</h1>
-          <a href="{{ form.src }}">download ></a>
+          <a href="{{ form.src }}" target="_blank">download ></a>
         </li>
       {% endfor %}
     </ul>

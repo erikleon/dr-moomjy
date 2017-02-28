@@ -3,6 +3,10 @@
     <div class="logo">
       <img src="/images/logo-white.png">
     </div>
+    <div class="info">
+      <div class="fax"><span>fax</span>{{ site.location_fax }}</div>
+      <div class="phone"><span>phone</span>{{ site.location_phone }}</div>
+    </div>
     <ul class="navigation-list">
       {% for nav in site.footer_navigation %}
         <li><a href="{{ nav.slug }}" target="{{ nav.target }}">{{ nav.title }}</a></li>
@@ -15,7 +19,7 @@
 </footer>
 <div class="overlay">
   <div class="container">
-    <div class="close"></div>
+    <div class="close">close</div>
     <video controls>
       <source src="/videos/example.mp4" type="video/mp4">
     </video>
