@@ -24,11 +24,12 @@ html, body {
 
   @media (max-width: 1024px) {
     width: 960px;
+    padding: 0 30px;
   }
 
   @media (max-width: 960) {
     width: 768px;
-    padding: 0 30px;
+
   }
 }
 
@@ -37,7 +38,7 @@ html, body {
   position: relative;
 
   hr {
-    width: 768px;
+    width: 1024px;
     max-width: 90%;
     margin: 0 auto;
 
@@ -49,6 +50,10 @@ html, body {
     z-index: 2;
     background-color: $white;
     padding: 50px 0;
+
+    @media (max-width: 768px) {
+      min-height: auto;
+    }
 
 
     .section-title {
@@ -79,7 +84,7 @@ html, body {
       position: relative;
 
       @media (max-width:768px) {
-        background-position: -300px;
+        background-position: -250px;
       }
 
       .container {
@@ -95,11 +100,13 @@ html, body {
           background-color: $purple_rgba;
           color: $white;
           text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+          line-height: 1.2em;
 
           @media (max-width: 768px) {
             width: 100%;
             top: initial;
             bottom: -30px;
+            padding: 50px 30px;
           }
 
           a {
@@ -107,21 +114,36 @@ html, body {
             font-weight: 700;
             color: $white;
             text-decoration: none;
+            margin: 10px 0 0 0;
           }
         }
       }
     }
 
     &.about {
+
       .container {
         @include display-flex();
         @include flex-direction(row);
+        @include flex-wrap(nowrap);
+
+        @media (max-width: 768px) {
+          @include flex-wrap(wrap);
+          @include justify-content(center);
+        }
 
         .about-copy {
           @include flex-grow(1);
           width: 70%;
           font-size: 17px;
           padding: 0 30px 0 0;
+
+          @media (max-width: 768px) {
+            @include flex-grow(1);
+            @include flex-shrink(0);
+            width: 100%;
+            padding: 0;
+          }
 
           .section-title {
             text-align: left;
@@ -133,26 +155,100 @@ html, body {
           }
         }
         .location {
+          @include display-flex();
+          @include flex-direction(row);
+          @include flex-wrap(wrap);
           @include flex-grow(1);
           width: 30%;
+          min-width: 260px;
           background-color: $light-grey;
           border-bottom: 3px solid $dark-grey;
           border-radius: 3px;
           font-size: 12px;
+          line-height: 1.2em;
           padding: 20px 35px;
 
+          @media (max-width: 768px) {
+            @include flex-shrink(0);
+            @include flex-grow(0);
+            width: 70%;
+            margin: 30px 0 0 0;
+          }
+
           .section-title {
+            @include flex-grow(1);
+            @include flex-shrink(0);
+            width: 100%;
             font-size: 16px;
             text-align: left;
             margin: 0 0 5px 0;
           }
 
+          .info {
+            @include flex-grow(1);
+            width: 100%;
+
+            @media (max-width: 768px) {
+              @include flex-grow(0);
+              @include flex-shrink(1);
+              width: auto;
+              margin: 0 20px 20px 0;
+
+            }
+
+            .address {
+
+            }
+            .fax {
+              span {
+                font-style: italic;
+              }
+            }
+            .phone {
+              span {
+                font-style: italic;
+              }
+            }
+          }
+
           .map {
-            display: block;
+            @include flex-grow(1);
+            width: 100%;
             margin: 20px 0;
+
+            @media (max-width: 768px) {
+              @include flex-grow(0);
+              @include flex-shrink(1);
+              width: auto;
+              margin: 0 0 20px 0;
+            }
 
             img {
               max-width: 100%;
+            }
+          }
+
+          .hours {
+            @include display-flex();
+            @include flex-direction(row);
+            @include flex-wrap(wrap);
+            @include flex-grow(1);
+            width: 100%;
+            line-height: 1.2em;
+
+            span {
+              @include flex-grow(1);
+              min-width: 50%;
+
+              &:nth-child(even) {
+                @include flex-shrink(1);
+                @include align-self(flex-end);
+
+              }
+
+              &:nth-child(odd) {
+                @include align-self(flex-start);
+              }
             }
           }
         }
@@ -169,29 +265,69 @@ html, body {
       }
 
       .carousel {
+
+        .slick-prev,
+        .slick-next {
+          border-right: 4px $white solid;
+          border-bottom: 4px $white solid;
+
+          &:before {
+            content: '';
+          }
+        }
+
+        .slick-prev {
+          left: -10px;
+          @include transform(rotate(135deg));
+        }
+
+        .slick-next {
+          right: -10px;
+          @include transform(rotate(-45deg));
+        }
+
         .slick-track {
+
           .item {
+            display: none;
             position: relative;
             padding: 40px 0;
             right: 0;
             top: 0;
             left: 0;
 
+            @media (max-width: 768px) {
+              padding: 0 20px;
+            }
+
             @include transition(right 100ms ease-in-out, left 100ms ease-in-out, top 200ms ease-in-out);
 
             &.prev {
               left: initial;
-              right: -200px;
+              right: -100px;
+
+              @media (max-width: 768px) {
+                right: 0;
+              }
             }
 
             &.slick-active {
               z-index: 1;
               top: -40px;
+
+              @media (max-width: 768px) {
+                z-index: 0;
+                top: 0;
+              }
             }
 
             &.next {
               right: initial;
-              left: -200px;
+              left: -100px;
+
+              @media (max-width: 768px) {
+                left: 0;
+              }
             }
 
             &:focus {
@@ -203,6 +339,50 @@ html, body {
               margin: 0 auto;
               width: 100%;
               @include box-shadow(3px 3px 4px 5px rgba(0,0,0,0.4));
+
+              @media (max-width: 768px) {
+                @include box-shadow(none);
+              }
+            }
+
+            .play {
+              position: absolute;
+              height: 100%;
+              width: 100%;
+              top: 0;
+              left: 0;
+              text-align: center;
+              @include display-flex();
+              @include flex-direction(row);
+              @include align-items(center);
+              @include justify-content(center);
+
+              svg {
+                @include align-self(center);
+                opacity: 0.6;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+
+        .slick-dots {
+
+          li {
+            color: $white;
+
+            &.slick-active {
+              color: $black;
+            }
+          }
+        }
+
+        &.slick-initialized {
+
+          .slick-track {
+
+            .item {
+              display: block;
             }
           }
         }
@@ -218,6 +398,7 @@ html, body {
         ul {
           @include display-flex();
           @include flex-wrap(wrap);
+          @include flex-direction(row);
 
           li {
             @include flex-grow(1);
@@ -250,6 +431,21 @@ html, body {
               }
             }
           }
+
+          @media (max-width: 768px) {
+            @include flex-direction(column);
+            @include flex-wrap(nowrap);
+            @include align-items(center);
+
+            li {
+              width: auto;
+
+              &:nth-child(odd),
+              &:nth-child(even) {
+                margin: 0;
+              }
+            }
+          }
         }
 
         .injection-training {
@@ -270,17 +466,17 @@ html, body {
           padding: 40px;
           background-color: $pink;
           border-radius: 5px;
-          width: 75%;
+          width: 60%;
           min-width: 300px;
           text-align: center;
 
           .group {
             position:relative;
-            margin-bottom:45px;
+            margin-bottom:40px;
 
             input {
               background-color: $pink;
-              font-size: 18px;
+              font-size: 16px;
               padding: 10px 10px 10px 5px;
               display: block;
               width: 100%;
@@ -295,7 +491,7 @@ html, body {
 
             label {
               color: $white;
-              font-size: 18px;
+              font-size: 16px;
               font-weight: normal;
               position: absolute;
               pointer-events: none;
@@ -378,7 +574,7 @@ html, body {
           }
 
           input[type=submit] {
-            padding: 30px 40px;
+            padding: 15px 40px;
             background-color: $dark-pink;
             border: none;
             border-radius: 4px;
@@ -386,6 +582,7 @@ html, body {
             font-size: 18px;
             text-transform: lowercase;
             cursor: pointer;
+            -webkit-appearance: none;
           }
         }
       }
@@ -408,17 +605,22 @@ html, body {
   top: 0;
   bottom: 0;
   overflow: hidden;
+  @include flex-direction(row);
+  @include align-items(center);
+  @include justify-content(center);
 
   &.active {
-    display: block;
-
+    @include display-flex();
   }
 
   .close {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    background-color: $purple;
+    text-align: right;
+    color: $white;
+    cursor: pointer;
+  }
+
+  video {
+    max-width: 100%;
   }
 }
 
