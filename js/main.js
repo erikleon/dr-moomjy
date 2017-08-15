@@ -2,9 +2,6 @@
   // Initializing function
   var moomjy_js = {
     init: function () {
-
-
-
       moomjy_js.carouselHandler();
       moomjy_js.carouselInit();
       moomjy_js.formInit();
@@ -13,7 +10,9 @@
 
       moomjy_js.clickHandler();
 
+      moomjy_js.scrollMagic();
       moomjy_js.smoothScroll(window.location.hash);
+
     },
     clickHandler: function () {
       // Toggle the navigation on click of hamburger menu class
@@ -52,8 +51,12 @@
         moomjy_js.overlayToggle();
       });
     },
-    scrollmagic: function () {
-      var $controller = new ScrollMagic.Controller();
+    scrollMagic: function () {
+      var $controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+      new ScrollMagic.Scene({triggerElement: "#about"})
+          .setTween("#home > .background", {y: "50%", ease: Linear.easeNone})
+          .addTo($controller);
     },
     smoothScroll: function ($this) {
       if ($this) {
