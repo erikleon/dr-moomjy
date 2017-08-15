@@ -46,19 +46,22 @@ hero_copy: > # this means to ignore newlines until "baseurl:"
   Nulla rutrum nec dolor quis consequat.
 about_title: Dr. Maureen Moomjy
 about_copy: >
-  Dr. Moomjy pursued a unique and rewarding journey in the development of her career of Reproductive Medicine and Infertility and Gynecology. After completing her Master of Arts Degree in Developmental Disabilities at New York University, she proceeded to work fours years in a Brooklyn Hospital and then completed her Medical Degree, cum laude, at the State University of New York, Brooklyn. She received a distinction in research through her lab studies dedicated to analyzing neuroreceptors and neurotransmitters and how they could be manipulated to treat a specific neurological disease, Myasthenia Gravis.<br><br>
-  Dr. Moomjy recognizes that a patient with a fertility problem or a hormonal problem is under substantial stress; often having consulted more than one physician in the process. Yet, her philosophy is that a successful outcome is usually achievable with dedication, perseverance, and medical expertise.
+  Dr. Moomjy has been providing specialized, comprehensive, and compassionate care in Fertility, Gynecology, and Reproductive Medicine for over 20 years. She offers patients Fertility Services in collaboration with NYU Fertility Center including In Vitro Fertilization (IVF), Intracytoplasmic Sperm Injection (ICSI), Egg Freezing, Preimplantation Genetic Diagnosis (PGD), and Donor Egg IVF. Additionally, she routinely performs gynecologic and reproductive surgery and guides patients through hormonal treatment options. Dr. Moomjy completed her residency in OB-GYN at Columbia Presbyterian Medical Center and her fellowship in Reproductive Endocrinology and Infertility at New York Hospital-Cornell Weill. She received her M.D. Cum Laude with Distinction in Research from the State University of New York, Brooklyn.
+  <br /><br />
+  Dr. Moomjy has been in private practice in New York City since 2000, most recently with Madison Women&#39;s Health and Fertility, a full-service gynecology, infertility and reproductive endocrinology practice. Previously, Dr. Moomjy served as an attending physician with the Cornell IVF Center for Reproductive Medicine and Infertility where she performed egg retrievals, embryo transfers, gynecologic and reproductive surgery, and expanded the Center’s Donor Egg IVF program. She maintains operating privileges at New York Presbyterian Cornell-Weill and routinely provides Operative Hysteroscopy for the treatment of Polyps, Fibroids, Septum, and Adhesions; and Operative Laparoscopy as needed for the treatment of tubal disease. Dr. Moomjy remains committed to providing access to fertility and reproductive services to all women and continues to teach residents in OB-GYN regularly such that patients fromunderserved communities may have access to excellent specialty fertility and reproductive endocrinology services.
+  <br /><br />
+  Dr. Moomjy recognizes that fertility and hormonal abnormalities cause substantial stress for patients who often consult multiple physicians in search of treatment. Yet, her philosophy is that a successful outcome is usually achievable with dedication, perseverance, and medical expertise.
 location_title: location
 location_address: >
   555 55th Street, Suite 555<br>
   New York, NY 55555
-location_fax: 555-555-555
-location_phone: 555-555-555
+location_fax: "555.555.5555"
+location_phone: "555.555.5555"
 location_hours: >
   <span>monday</span><span>9:00am - 4:00pm</span>
   <span>tuesday</span><span>9:00am - 4:00pm</span>
   <span>wednesday</span><span>9:00am - 4:00pm</span>
-  <span>thrusday</span><span>9:00am - 4:00pm</span>
+  <span>thursday</span><span>9:00am - 4:00pm</span>
   <span>friday</span><span>9:00am - 4:00pm</span>
   <span>saturday</span><span>9:00am - 4:00pm</span>
   <span>sunday</span><span>9:00am - 4:00pm</span>
@@ -132,3 +135,7 @@ url: "http://local.maureenmoomjy.com" # the base hostname & protocol for your si
 markdown: kramdown
 exclude:
   - "bower.json"
+  - "styles/config.rb"
+sass:
+  style: compressed
+  sourcemap: true
