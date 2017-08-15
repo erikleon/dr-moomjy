@@ -4,6 +4,7 @@ name: Dr Maureen Moomjy
 title: Dr Maureen Moomjy
 ---
 <section id="home" class="hero home">
+  <div class="background"></div>
   <div class="container">
     <div class="floating-box">{{ site.hero_copy }}<a href="/#request">REQUEST AN APPOINTMENT ></a></div>
   </div> <!-- .container -->
@@ -18,8 +19,8 @@ title: Dr Maureen Moomjy
       <h1 class="section-title">{{ site.location_title }}</h1>
       <div class="info">
         <div class="address">{{ site.location_address }}</div>
-        <div class="fax"><span>f.</span>{{ site.location_fax }}</div>
-        <div class="phone"><span>p.</span>{{ site.location_phone }}</div>
+        <div class="phone"><span>p </span>{{ site.location_phone }}</div>
+        <div class="fax"><span>f </span>{{ site.location_fax }}</div>
       </div>
       <a class="map" target="_blank" href="https://www.google.com/maps">
         <img src="/images/map.jpg" alt="Google Maps Insert">
@@ -65,8 +66,8 @@ title: Dr Maureen Moomjy
     </div>
   </div> <!-- .container -->
 </section>
-<hr>
 <section id="request" class="request">
+  <div class="background"></div>
   <div class="container">
     <h1 class="section-title">request an appointment</h1>
     <form action="https://formspree.io/ekarwatowski@gmail.com" method="POST">
@@ -91,6 +92,6 @@ title: Dr Maureen Moomjy
         <div class="bar"></div>
       </div>
       <input type="submit" value="Submit">
-  </form>
+    </form>
   </div> <!-- .container -->
 </section>
