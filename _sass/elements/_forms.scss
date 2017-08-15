@@ -1,0 +1,73 @@
+.main section.forms {
+  position: relative;
+  .container {
+    position: relative;
+    height: 100%;
+
+    ul {
+      @include display-flex();
+      @include flex-wrap(wrap);
+      @include flex-direction(row);
+
+      li {
+        @include flex-grow(1);
+        width: 45%;
+        padding: 20px 0;
+        display: block;
+        border-bottom: 1px solid $light-grey;
+
+        &:nth-child(odd) {
+          margin: 0 5% 0 0;
+        }
+
+        &:nth-child(even) {
+          margin: 0 0 0 5%;
+        }
+
+        h1 {
+          color: $grey;
+          font-weight: 800;
+          font-size: 22px;
+          margin: 0 0 5px 0;
+        }
+
+        a {
+          color: $pink;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+      @media (max-width: 768px) {
+        @include flex-direction(column);
+        @include flex-wrap(nowrap);
+        @include align-items(center);
+
+        li {
+          width: auto;
+
+          &:nth-child(odd),
+          &:nth-child(even) {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    .injection-training {
+      text-align: center;
+
+      a {
+        display: block;
+        max-width: 100%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
