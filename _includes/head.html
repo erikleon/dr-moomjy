@@ -8,12 +8,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="apple-touch-fullscreen" content="yes">
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
-  <link rel="shortcut icon" href="{{ "/images/favicon.png" | prepend: site.baseurl }}">
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
   <link rel="stylesheet" href="{{ "/bower_components/jquery-ui/themes/base/jquery-ui.min.css" | prepend: site.baseurl }}">
   <script type="text/javascript">
     var css = document.createElement('link');
     css.setAttribute('rel', 'stylesheet');
-    css.setAttribute('href','/styles/css/styles.css?v='+Math.floor(Math.random()*1000000));
+    css.setAttribute('href','/css/styles.css?v='+Math.floor(Math.random()*1000000));
     document.head.appendChild(css);
   </script>
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">

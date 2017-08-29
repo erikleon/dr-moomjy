@@ -4,8 +4,14 @@ name: Dr Maureen Moomjy
 title: Dr Maureen Moomjy
 ---
 <section id="home" class="hero home">
+  <div class="background"></div>
   <div class="container">
     <div class="floating-box">{{ site.hero_copy }}<a href="/#request">REQUEST AN APPOINTMENT ></a></div>
+  </div> <!-- .container -->
+</section>
+<section id="hero-copy" class="hero-copy">
+  <div class="container">
+    <div class="copy">{{ site.hero_copy }}<a href="/#request">REQUEST AN APPOINTMENT ></a></div>
   </div> <!-- .container -->
 </section>
 <section id="about" class="about">
@@ -17,11 +23,12 @@ title: Dr Maureen Moomjy
     <div class="location">
       <h1 class="section-title">{{ site.location_title }}</h1>
       <div class="info">
-        <div class="address">{{ site.location_address }}</div>
-        <div class="fax"><span>f.</span>{{ site.location_fax }}</div>
-        <div class="phone"><span>p.</span>{{ site.location_phone }}</div>
+        <div class="address">
+          <a target="_blank" href="https://www.google.com/maps/place/30+E+60th+St,+New+York,+NY+10022/@40.763724,-73.9724459,17">{{ site.location_address }}</a>
+        </div>
+        <div class="phone"><span>p </span>{{ site.location_phone }}</div>
       </div>
-      <a class="map" target="_blank" href="https://www.google.com/maps">
+      <a class="map" target="_blank" href="https://www.google.com/maps/place/30+E+60th+St,+New+York,+NY+10022/@40.763724,-73.9724459,17">
         <img src="/images/map.jpg" alt="Google Maps Insert">
       </a>
       <h1 class="section-title">office hours</h1>
@@ -32,7 +39,7 @@ title: Dr Maureen Moomjy
 <section id="videos" class="videos">
   <div class="container">
     <h1 class="section-title">{{ site.videos_title }}</h1>
-    <h3 class="section-subtitle">{{ site.videos_subtitle }}</h3>
+    <h3 class="section-subtitle">{{ site.videos[0].title }}</h3>
     <div class="carousel">
       {% for item in site.videos %}
         <div class="item">
@@ -49,27 +56,11 @@ title: Dr Maureen Moomjy
 
   </div> <!-- .container -->
 </section>
-<section id="forms" class="forms">
-  <div class="container">
-    <h1 class="section-title">forms &amp; resources</h1>
-    <ul>
-      {% for form in site.forms %}
-        <li>
-          <h1>{{ form.title }}</h1>
-          <a href="{{ form.src }}" target="_blank">download ></a>
-        </li>
-      {% endfor %}
-    </ul>
-    <div class="injection-training">
-      <a href="http://www.freedommedteach.com/eng/"><img src="/images/training.png" alt="Click here for injection training from FREEDOM FERTILITY PHARMACY"></a>
-    </div>
-  </div> <!-- .container -->
-</section>
-<hr>
 <section id="request" class="request">
+  <div class="background"></div>
   <div class="container">
     <h1 class="section-title">request an appointment</h1>
-    <form action="https://formspree.io/ekarwatowski@gmail.com" method="POST">
+    <form action="https://formspree.io/scheduling@drmoomjy.com" method="POST">
       <div class="group">
         <input type="text" name="name" required>
         <label for="name">Name</label>
@@ -91,6 +82,6 @@ title: Dr Maureen Moomjy
         <div class="bar"></div>
       </div>
       <input type="submit" value="Submit">
-  </form>
+    </form>
   </div> <!-- .container -->
 </section>
