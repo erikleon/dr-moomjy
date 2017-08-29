@@ -30,6 +30,8 @@
 
       $('.overlay .close').on('click', function() {
         moomjy_js.overlayToggle();
+        var video = document.getElementById("video");
+        video.pause();
       });
 
     },
@@ -42,13 +44,24 @@
       $('body').toggleClass('noscroll');
     },
     videoHandler: function ($src) {
-      $('.overlay video').src = $src;
-      $('.overlay video').load();
+
+      var video = document.getElementById("video");
+      var source = document.getElementById('source');
+
+
+      source.setAttribute('src', $src);
+
+      video.load();
+
+      if (video.paused == true) {
+        video.play();
+      }
     },
     overlayHandler: function () {
       $('.item.slick-active .play svg').on('click', function() {
         moomjy_js.videoHandler($(this).data('src'));
         moomjy_js.overlayToggle();
+
       });
     },
     scrollMagic: function () {
@@ -76,6 +89,7 @@
           $('.slick-slide').removeClass('prev next');
         })
         .on('afterChange', function(event, slick, currentSlide, nextSlide){
+          $('.videos .section-subtitle').html($('.slick-active img').attr('alt'));
           $('.slick-active').prev().addClass('prev');
           $('.slick-active').next().addClass('next');
           moomjy_js.overlayHandler();
