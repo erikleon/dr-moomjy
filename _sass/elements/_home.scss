@@ -5,18 +5,28 @@
   padding: 0;
   position: relative;
 
+  @media (max-width:768px) {
+    height: 75vh;
+  }
+
   .background {
     background-image: url(../../images/hero.jpg);
     background-position: center;
-    background-size: 100%;
-  }
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 0;
 
-  @media (max-width:768px) {
-    background-position: -250px;
+    @media (max-width:425px) {
+      background-position: -125px;
+    }
   }
 
   .container {
     height: 100%;
+
+    @media (max-width: 768px) {
+      height: auto;
+    }
 
     .floating-box {
       position: absolute;
@@ -31,11 +41,41 @@
       line-height: 1.2em;
 
       @media (max-width: 768px) {
+        display: none;
         width: 100%;
         top: initial;
-        bottom: -30px;
+        bottom: 0;
         padding: 50px 30px;
       }
+
+      a {
+        display: block;
+        font-weight: 700;
+        color: $white;
+        text-decoration: none;
+        margin: 10px 0 0 0;
+      }
+    }
+  }
+}
+
+.main section.hero-copy {
+  display: none;
+  background-color: $purple;
+  padding: 0;
+
+  @media (max-width: 768px) {
+    display: block
+  }
+
+  .container {
+    height: auto;
+
+    .copy {
+      padding: 50px 30px;
+      color: $white;
+      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+      line-height: 1.2em;
 
       a {
         display: block;

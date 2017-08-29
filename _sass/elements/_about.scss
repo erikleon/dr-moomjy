@@ -1,8 +1,10 @@
 .about {
+
   .container {
     @include display-flex();
     @include flex-direction(row);
     @include flex-wrap(nowrap);
+    @include align-items(flex-start);
 
     @media (max-width: 768px) {
       @include flex-wrap(wrap);
@@ -10,7 +12,6 @@
     }
 
     .about-copy {
-      @include flex-grow(1);
       width: 70%;
       font-size: 15px;
       padding: 0 30px 0 0;
@@ -32,29 +33,20 @@
       }
     }
     .location {
-      @include display-flex();
-      @include flex-direction(row);
-      @include flex-wrap(wrap);
-      @include flex-grow(1);
       width: 30%;
       min-width: 260px;
       background-color: $light-grey;
       border-bottom: 3px solid $dark-grey;
       border-radius: 3px;
       font-size: 12px;
-      line-height: 1.2em;
       padding: 20px 35px;
 
       @media (max-width: 768px) {
-        @include flex-shrink(0);
-        @include flex-grow(0);
         width: 70%;
         margin: 30px 0 0 0;
       }
 
       .section-title {
-        @include flex-grow(1);
-        @include flex-shrink(0);
         width: 100%;
         font-size: 16px;
         text-align: left;
@@ -62,12 +54,9 @@
       }
 
       .info {
-        @include flex-grow(1);
         width: 100%;
 
         @media (max-width: 768px) {
-          @include flex-grow(0);
-          @include flex-shrink(1);
           width: auto;
           margin: 0 20px 20px 0;
 
@@ -75,6 +64,18 @@
 
         .address {
           padding: 0 0 15px 0;
+
+          a {
+            text-decoration: none;
+
+            &:hover {
+              cursor: pointer;
+            }
+
+            &:visited {
+              color: inherit;
+            }
+          }
         }
 
         .fax {
@@ -97,13 +98,11 @@
       }
 
       .map {
-        @include flex-grow(1);
         width: 100%;
         margin: 20px 0;
+        display: block;
 
         @media (max-width: 768px) {
-          @include flex-grow(0);
-          @include flex-shrink(1);
           width: auto;
           margin: 0 0 20px 0;
         }
@@ -117,7 +116,8 @@
         @include display-flex();
         @include flex-direction(row);
         @include flex-wrap(wrap);
-        @include flex-grow(1);
+        @include flex-grow(0);
+        @include flex-shrink(1);
         width: 100%;
         line-height: 1.2em;
 
