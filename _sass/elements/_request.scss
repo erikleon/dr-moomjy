@@ -19,8 +19,13 @@
       background-color: transparent;
       border-radius: 5px;
       width: 70%;
-      min-width: 300px;
+      min-width: 425px;
       text-align: center;
+
+      @media(max-width: 425px) {
+        width: 100%;
+        min-width: 320px;
+      }
 
       .group {
         position:relative;
@@ -121,13 +126,13 @@
 
         ::-webkit-calendar-picker-indicator {
           display: block;
-          background-image: url(/images/calendar-icon.png);
+          background-image: url(/images/calendar-icon-fill.png);
         }
       }
 
       input[type=submit] {
         padding: 15px 40px;
-        background-color: $dark-pink;
+        background-color: $pink;
         border: none;
         border-radius: 4px;
         color: $white;
