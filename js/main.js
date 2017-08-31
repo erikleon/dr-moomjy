@@ -124,7 +124,7 @@
     },
     formInit: function () {
       $( ".datepicker input" ).datepicker({
-        buttonImage: "/images/calendar-icon.png",
+        buttonImage: "/images/calendar-icon-fill.png",
         autoSize: true,
         showOn: "both"
       });
