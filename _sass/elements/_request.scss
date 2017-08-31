@@ -19,8 +19,13 @@
       background-color: transparent;
       border-radius: 5px;
       width: 70%;
-      min-width: 300px;
+      min-width: 425px;
       text-align: center;
+
+      @media(max-width: 425px) {
+        width: 100%;
+        min-width: 320px;
+      }
 
       .group {
         position:relative;
