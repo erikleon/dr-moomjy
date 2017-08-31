@@ -1,14 +1,13 @@
 <nav>
   <div class="container">
-    <div class="logo">
+    <a class="logo" href="/#home">
       <img src="/images/logo.png" alt="Maureen Moomjy MD. FACOG">
-    </div> <!-- .logo -->
+    </a> <!-- .logo -->
     <div class="mobile toggle">
       <span></span>
       <span></span>
       <span></span>
     </div> <!-- .toggle -->
-    <div id="trigger-1"></div>
     <ul id="top-nav" class="navigation-list">
       {% for nav in site.navigation %}
         <li><a href="{{ nav.slug }}">{{ nav.title }}</a></li>

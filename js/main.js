@@ -2,15 +2,17 @@
   // Initializing function
   var moomjy_js = {
     init: function () {
-
       moomjy_js.carouselHandler();
       moomjy_js.carouselInit();
+      moomjy_js.formInit();
 
       moomjy_js.overlayHandler();
 
       moomjy_js.clickHandler();
 
+      moomjy_js.scrollMagic();
       moomjy_js.smoothScroll(window.location.hash);
+
     },
     clickHandler: function () {
       // Toggle the navigation on click of hamburger menu class
@@ -28,6 +30,8 @@
 
       $('.overlay .close').on('click', function() {
         moomjy_js.overlayToggle();
+        var video = document.getElementById("video");
+        video.pause();
       });
 
     },
@@ -40,17 +44,32 @@
       $('body').toggleClass('noscroll');
     },
     videoHandler: function ($src) {
-      $('.overlay video').src = $src;
-      $('.overlay video').load();
+
+      var video = document.getElementById("video");
+      var source = document.getElementById('source');
+
+
+      source.setAttribute('src', $src);
+
+      video.load();
+
+      if (video.paused == true) {
+        video.play();
+      }
     },
     overlayHandler: function () {
-      $('.item.slick-active img').on('click', function() {
+      $('.item.slick-active .play svg').on('click', function() {
         moomjy_js.videoHandler($(this).data('src'));
         moomjy_js.overlayToggle();
+
       });
     },
-    scrollmagic: function () {
-      var $controller = new ScrollMagic.Controller();
+    scrollMagic: function () {
+      var $controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+
+      new ScrollMagic.Scene({triggerElement: "#about"})
+          .setTween("#home > .background", {y: "50%", ease: Linear.easeNone})
+          .addTo($controller);
     },
     smoothScroll: function ($this) {
       if ($this) {
@@ -70,6 +89,7 @@
           $('.slick-slide').removeClass('prev next');
         })
         .on('afterChange', function(event, slick, currentSlide, nextSlide){
+          $('.videos .section-subtitle').html($('.slick-active img').attr('alt'));
           $('.slick-active').prev().addClass('prev');
           $('.slick-active').next().addClass('next');
           moomjy_js.overlayHandler();
@@ -77,17 +97,37 @@
     },
     carouselInit: function () {
       $args = {
+        draggable: true,
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         centerMode: true,
-        centerPadding: '20%',
+        centerPadding: '30%',
         dots: true,
         speed: 300,
         arrows: true,
+        customPaging: function(slider, i) {
+          var thumb = $(slider.$slides[i]).data();
+          return '<span>&mdash;</span>';
+        },
+        responsive: [
+          {
+            breakpoint: 769,
+            settings: {
+              centerPadding: '0',
+            }
+          }
+        ],
 
       };
       $('.carousel').slick($args);
+    },
+    formInit: function () {
+      $( ".datepicker input" ).datepicker({
+        buttonImage: "/images/calendar-icon-fill.png",
+        autoSize: true,
+        showOn: "both"
+      });
     }
   };
   moomjy_js.init();

@@ -30,79 +30,54 @@ navigation:
     title: Videos
     slug: /#videos
   - 3:
-    title: Forms & Resources
-    slug: /#forms
-  - 4:
     title: Request Appointment
     slug: /#request
 hero_image: hero.jpg
 hero_copy: > # this means to ignore newlines until "baseurl:"
-  <strong>Lorem ipsum</strong> dolor sit amet, consectetur adipiscing elit. Morbi id est orci.
-  Etiam eu condimentum velit, a sodales velit. Nunc bibendum magna euismod sapien sodales consectetur.
-  Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-  Donec eget mauris suscipit, blandit lorem eu, viverra odio.
-  Aliquam erat volutpat.
-  Praesent sed nibh at libero convallis auctor.
-  Nulla rutrum nec dolor quis consequat.
+  <strong>Dr. Moomjy</strong> has been providing specialized, comprehensive care in Fertility, Gynecology, and Reproductive Medicine for over 20 years. She received her M.D. Cum Laude with Distinction in Research from the State University of New York, Brooklyn and trained at Columbia Presbyterian Medical Center and New York Hospital-Cornell Weil. Dr. Moomjy recognizes that fertility and hormonal abnormalities cause substantial stress, her philosophy is that a successful outcome can be achievable with dedication, perseverance, and medical expertise.
 about_title: Dr. Maureen Moomjy
 about_copy: >
-  Dr. Moomjy pursued a unique and rewarding journey in the development of her career of Reproductive Medicine and Infertility and Gynecology. After completing her Master of Arts Degree in Developmental Disabilities at New York University, she proceeded to work fours years in a Brooklyn Hospital and then completed her Medical Degree, cum laude, at the State University of New York, Brooklyn. She received a distinction in research through her lab studies dedicated to analyzing neuroreceptors and neurotransmitters and how they could be manipulated to treat a specific neurological disease, Myasthenia Gravis.<br><br>
-  Dr. Moomjy recognizes that a patient with a fertility problem or a hormonal problem is under substantial stress; often having consulted more than one physician in the process. Yet, her philosophy is that a successful outcome is usually achievable with dedication, perseverance, and medical expertise.
+  Dr. Moomjy has been providing specialized, comprehensive, and compassionate care in Fertility, Gynecology, and Reproductive Medicine for over 20 years. She offers patients Fertility Services in collaboration with NYU Fertility Center including In Vitro Fertilization (IVF), Intracytoplasmic Sperm Injection (ICSI), Egg Freezing, Preimplantation Genetic Diagnosis (PGD), and Donor Egg IVF. Additionally, she routinely performs gynecologic and reproductive surgery and guides patients through hormonal treatment options. Dr. Moomjy completed her residency in OB-GYN at Columbia Presbyterian Medical Center and her fellowship in Reproductive Endocrinology and Infertility at New York Hospital-Cornell Weill. She received her M.D. Cum Laude with Distinction in Research from the State University of New York, Brooklyn.
+  <br /><br />
+  Dr. Moomjy has been in private practice in New York City since 2000, most recently with Madison Women&#39;s Health and Fertility, a full-service gynecology, infertility and reproductive endocrinology practice. Previously, Dr. Moomjy served as an attending physician with the Cornell IVF Center for Reproductive Medicine and Infertility where she performed egg retrievals, embryo transfers, gynecologic and reproductive surgery, and expanded the Center’s Donor Egg IVF program. She maintains operating privileges at New York Presbyterian Cornell-Weill and routinely provides Operative Hysteroscopy for the treatment of Polyps, Fibroids, Septum, and Adhesions; and Operative Laparoscopy as needed for the treatment of tubal disease. Dr. Moomjy remains committed to providing access to fertility and reproductive services to all women and continues to teach residents in OB-GYN regularly such that patients fromunderserved communities may have access to excellent specialty fertility and reproductive endocrinology services.
+  <br /><br />
+  Dr. Moomjy recognizes that fertility and hormonal abnormalities cause substantial stress for patients who often consult multiple physicians in search of treatment. Yet, her philosophy is that a successful outcome is usually achievable with dedication, perseverance, and medical expertise.
 location_title: location
 location_address: >
-  555 55th Street, Suite 555
-  New York, NY 55555
-location_fax: 555-555-555
-location_phone: 555-555-555
+  30 E 60th St, Suite 1901<br/>
+  NY NY 10022
+location_phone: "212-230-1055"
 location_hours: >
-  monday    9:00am - 4:00pm<br>
-  tuesday   9:00am - 4:00pm<br>
-  wednesday 9:00am - 4:00pm<br>
-  thursday  9:00am - 4:00pm<br>
-  friday    9:00am - 4:00pm<br>
-  sunday    9:00am - 4:00pm<br>
-  saturday  9:00am - 4:00pm<br>
+  <span>monday</span><span>9:00am - 4:00pm</span>
+  <span>tuesday</span><span>9:00am - 4:00pm</span>
+  <span>wednesday</span><span>9:00am - 4:00pm</span>
+  <span>thursday</span><span>9:00am - 4:00pm</span>
+  <span>friday</span><span>9:00am - 4:00pm</span>
+  <span>saturday</span><span>9:00am - 4:00pm</span>
+  <span>sunday</span><span>9:00am - 4:00pm</span>
 videos_title: videos
 videos_subtitle: sub title
 videos:
   - 0:
-    title: Example
+    title: What is the procedure for a Hysteroscopy?
     thumb: video_1_thumb.jpg
-    src: example.mp4
+    src: What is the procedure for a Hysteroscopy.mp4
   - 1:
-    title: Example 1
+    title: What is IVF?
     thumb: video_2_thumb.jpg
-    src: example.mp4
+    src: What is IVF (In-Vitro Fertilization).mp4
   - 2:
-    title: Example 2
+    title: What are treatment options for infertility?
     thumb: video_3_thumb.jpg
-    src: example.mp4
-forms_title: Forms & Resources
-forms:
-  - 0:
-    title: Patient Information Form
-    src: example.pdf
-  - 1:
-    title: Review of Systems Form
-    src: example.pdf
-  - 2:
-    title: Review of Systems Form
-    src: example.pdf
+    src: What are treatment options for infertility.mp4
   - 3:
-    title: Review of Systems Form
-    src: example.pdf
+    title: What is a miscarriage
+    thumb: video_1_thumb.jpg
+    src: What is a miscarriage.mp4
   - 4:
-    title: Review of Systems Form
-    src: example.pdf
-  - 5:
-    title: Review of Systems Form
-    src: example.pdf
-  - 6:
-    title: Review of Systems Form
-    src: example.pdf
-  - 7:
-    title: Review of Systems Form
-    src: example.pdf
+    title: What is PGD?
+    thumb: video_2_thumb.jpg
+    src: What is PGD (Preimplantation genetic diagnosis).mp4
 request_title: Request an Appointment
 footer_navigation:
   - 0:
@@ -110,21 +85,13 @@ footer_navigation:
     target: _self
     slug: /#about
   - 1:
-    title: Patients Rights and Responsibilities
+    title: Financial Policy
     target: _blank
-    slug: /pdfs/example.pdf
+    slug: /pdfs/Dr. Moomjy Financial Policy.pdf
   - 2:
-    title: Terms of Use
-    target: _self
-    slug: /terms-of-use/
-  - 3:
     title: Privacy Policy
-    target: _self
-    slug: /privacy-policy/
-  - 4:
-    title: HIPPA Information
     target: _blank
-    slug: https://www.hhs.gov/hipaa/
+    slug: /pdfs/Dr. Moomjy Privacy Policy.pdf
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://local.maureenmoomjy.com" # the base hostname & protocol for your site
 
@@ -132,3 +99,7 @@ url: "http://local.maureenmoomjy.com" # the base hostname & protocol for your si
 markdown: kramdown
 exclude:
   - "bower.json"
+  - "styles/config.rb"
+sass:
+  style: compressed
+  sourcemap: true

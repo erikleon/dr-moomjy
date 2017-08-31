@@ -1,0 +1,99 @@
+@mixin transition($attr...) {
+    -webkit-transition: $attr;
+    -moz-transition: $attr;
+    -ms-transition: $attr;
+    -o-transition: $attr;
+    transition: $attr;
+}
+
+@mixin transform($attr...) {
+    -webkit-transform: $attr;
+    -moz-transform: $attr;
+    -ms-transform: $attr;
+    -o-transform: $attr;
+    transform: $attr;
+}
+
+@mixin align-self($attr...) {
+  -webkit-align-self: $attr;
+  -moz-align-self: $attr;
+  -ms-align-self: $attr;
+  align-self: $attr;
+}
+
+@mixin align-content($attr...) {
+  -webkit-align-content: $attr;
+  -moz-align-content: $attr;
+  -ms-align-content: $attr;
+  align-content: $attr;
+}
+
+@mixin flex($attr...) {
+  -webkit-box-flex: 0;
+  -webkit-box-flex: $attr;
+  -webkit-flex: $attr;
+  -ms-flex: $attr;
+  flex: $attr;
+}
+
+@mixin flex-important($attr...) {
+  -webkit-box-flex: 0 !important;
+  -webkit-box-flex: $attr !important;
+  -webkit-flex: $attr !important;
+  -ms-flex: $attr !important;
+  flex: $attr !important;
+}
+
+@mixin align-items($attr...) {
+  -webkit-align-items: $attr;
+  -moz-align-items: $attr;
+  -ms-align-items: $attr;
+  align-items: $attr;
+}
+
+@mixin justify-content($attr...) {
+  -webkit-justify-content: $attr;
+  -moz-justify-content: $attr;
+  -ms-justify-content: $attr;
+  justify-content: $attr;
+}
+
+@mixin flex-wrap($attr...) {
+  -webkit-flex-wrap: $attr;
+  -ms-flex-wrap: $attr;
+  flex-wrap: $attr;
+}
+
+@mixin display-flex() {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin flex-direction($attr...) {
+  -webkit-flex-direction: $attr;
+  -ms-flex-direction: $attr;
+  flex-direction: $attr;
+}
+
+@mixin flex-wrap($attr...) {
+  -webkit-flex-wrap: $attr;
+  -moz-flex-wrap: $attr;
+  -ms-flex-wrap: $attr;
+  flex-wrap: $attr;
+}
+
+@mixin flex-grow($attr...) {
+  -webkit-flex-grow: $attr;
+  -moz-flex-grow: $attr;
+  -ms-flex-grow: $attr;
+  flex-grow: $attr;
+}
+
+@mixin flex-shrink($attr...) {
+  -webkit-flex-shrink: $attr;
+  -moz-flex-shrink: $attr;
+  -ms-flex-shrink: $attr;
+  flex-shrink: $attr;
+}

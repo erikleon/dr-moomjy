@@ -1,0 +1,156 @@
+nav {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  top: 0;
+  padding: 20px 0;
+  background-image: linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+  background-color: $purple;
+
+
+  .container {
+    @include display-flex;
+    @include flex-direction(row);
+    @include flex-wrap(wrap);
+
+    @media (max-width: 768px) {
+      @include justify-content(space-between);
+    }
+
+    .toggle {
+      display: none;
+      width: 45px;
+      height: 45px;
+      @include flex-grow(0);
+      @include flex-shrink(1);
+      @include align-self(flex-end);
+
+      @media (max-width:768px) {
+        display: block;
+      }
+
+      span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        margin: 10px 0;
+        background-color: $white;
+        border-radius: 3px;
+
+        &:first-child {
+          margin: 5px 0 10px 0;
+        }
+
+        &:last-child {
+          margin: 10px 0 5px 0;
+        }
+      }
+    }
+
+    .logo {
+      z-index: 1;
+      text-align: center;
+      opacity: .99;
+      height: 63px;
+      line-height: 63px;
+      width: 100%;
+      @include flex-grow(1);
+      @include flex-shrink(0);
+
+      @media (max-width:768px) {
+        width: auto;
+        max-width: 70%;
+        @include flex-grow(0);
+        text-align: left;
+      }
+
+      @media (max-width: 530px) {
+        @include align-self(center);
+      }
+
+      img {
+        height: 100%;
+        width: auto;
+        display: inline-block;
+        vertical-align: middle;
+
+        @media (max-width:768px) {
+          max-width: 100%;
+          height: auto;
+        }
+      }
+
+      .desktop-only {
+        display: inline-block;
+
+        @media (max-width: 530px) {
+          display: none;
+        }
+      }
+
+      .mobile-only {
+        display: none;
+
+        @media (max-width: 530px) {
+          display: inline-block;
+        }
+      }
+    }
+
+    .navigation-list {
+      width: 100%;
+      z-index: 3;
+      color: $white;
+      font-size: 14px;
+      font-weight: 400;
+      margin: 15px 0;
+      @include flex-grow(1);
+      @include display-flex;
+      @include flex-direction(row);
+      @include align-items(center);
+      @include flex-wrap(wrap);
+      @include justify-content(space-between);
+
+      @media (max-width:768px) {
+        max-height: 0;
+        overflow: hidden;
+        @include transition(max-height 350ms ease-in-out);
+      }
+
+      &.active {
+        max-height: 100vh;
+      }
+
+      li {
+        @include flex-grow(1);
+        @include flex-shrink(0);
+        text-align: center;
+
+        @media (max-width:768px) {
+          padding: 12px;
+        }
+
+        @media (max-width: 530px) {
+          width: 100%;
+        }
+
+        a {
+          color: $white;
+          text-decoration: none;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+
+          &:hover {
+            color: $light-grey;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dr-maureen-moomjy {
+  nav {
+    background-color: transparent;
+  }
+}
