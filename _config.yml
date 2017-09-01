@@ -94,7 +94,7 @@ footer_navigation:
     target: _blank
     slug: /pdfs/Dr. Moomjy Privacy Policy.pdf
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://local.maureenmoomjy.com" # the base hostname & protocol for your site
+url: "https://www.drmoomjy.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
