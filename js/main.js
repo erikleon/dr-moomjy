@@ -65,7 +65,7 @@
       });
     },
     scrollMagic: function () {
-      var $controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%"}});
+      var $controller = new ScrollMagic.Controller({globalSceneOptions: {triggerHook: "onEnter", duration: "200%", offset: 0}});
 
       new ScrollMagic.Scene({triggerElement: "#about"})
           .setTween("#home > .background", {y: "50%", ease: Linear.easeNone})
