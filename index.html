@@ -61,6 +61,7 @@ title: Dr Maureen Moomjy
   <div class="container">
     <h1 class="section-title">request an appointment</h1>
     <form action="https://formspree.io/scheduling@drmoomjy.com" method="POST">
+      <input type="hidden" name="_next" value="{{ site.baseurl }}" />
       <div class="group">
         <input type="text" name="name" required>
         <label for="name">Name</label>
