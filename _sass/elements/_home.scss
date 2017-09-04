@@ -70,6 +70,7 @@
   display: none;
   background-color: $purple;
   padding: 0;
+  min-height: unset;
 
   @media (max-width: 768px) {
     display: block
@@ -83,6 +84,10 @@
       color: $white;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
       line-height: 1.2em;
+
+      @media (max-width: 768px) {
+        padding: 50px 0;
+      }
 
       a {
         display: block;
