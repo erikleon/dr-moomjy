@@ -45,14 +45,14 @@ about_copy: >
 location_title: location
 location_address: >
   30 E 60th St, Suite 1901<br/>
-  NY NY 10022
-location_phone: "212-230-1055"
+  New York, NY 10022
+location_phone: "212.230.1055"
 location_hours: >
-  <span>monday</span><span>9:00am - 4:00pm</span>
-  <span>tuesday</span><span>9:00am - 4:00pm</span>
-  <span>wednesday</span><span>9:00am - 4:00pm</span>
-  <span>thursday</span><span>9:00am - 4:00pm</span>
-  <span>friday</span><span>9:00am - 4:00pm</span>
+  <span>monday</span><span>7:30am - 4:00pm</span>
+  <span>tuesday</span><span>7:30am - 4:00pm</span>
+  <span>wednesday</span><span>7:30am - 4:00pm</span>
+  <span>thursday</span><span>7:30am - 4:00pm</span>
+  <span>friday</span><span>7:30am - 4:00pm</span>
   <span>fertility treatments</span><span></span>
   <span>saturday</span><span>7:30am - 11:00am</span>
   <span>sunday</span><span>7:30am - 11:00am</span>
