@@ -59,7 +59,8 @@ nav {
 
       @media (max-width:768px) {
         width: auto;
-        max-width: 70%;
+        max-width: 75%;
+        max-width: Calc(100% - 65px);
         @include flex-grow(0);
         text-align: left;
       }
@@ -80,21 +81,6 @@ nav {
         }
       }
 
-      .desktop-only {
-        display: inline-block;
-
-        @media (max-width: 530px) {
-          display: none;
-        }
-      }
-
-      .mobile-only {
-        display: none;
-
-        @media (max-width: 530px) {
-          display: inline-block;
-        }
-      }
     }
 
     .navigation-list {
