@@ -84,7 +84,7 @@ footer_navigation:
   - 0:
     title: Hours and Location
     target: _self
-    slug: /#about
+    slug: /#location
   - 1:
     title: Financial Policy
     target: _blank
