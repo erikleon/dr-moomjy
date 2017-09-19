@@ -47,6 +47,7 @@ location_address: >
   30 E 60th St, Suite 1901<br/>
   New York, NY 10022
 location_phone: "212.230.1055"
+location_fax: "877.832.3365"
 location_hours: >
   <span>monday</span><span>7:30am - 4:00pm</span>
   <span>tuesday</span><span>7:30am - 4:00pm</span>
@@ -73,7 +74,7 @@ videos:
     src: What are treatment options for infertility.mp4
   - 3:
     title: What is a miscarriage
-    thumb: video_1_thumb.jpg
+    thumb: What is a miscarriage.jpg
     src: What is a miscarriage.mp4
   - 4:
     title: What is PGD?
