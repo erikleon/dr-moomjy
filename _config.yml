@@ -62,15 +62,15 @@ videos_subtitle: sub title
 videos:
   - 0:
     title: What is the procedure for a Hysteroscopy?
-    thumb: video_1_thumb.jpg
+    thumb: video_2_thumb.jpg
     src: What is the procedure for a Hysteroscopy.mp4
   - 1:
     title: What is IVF?
-    thumb: video_2_thumb.jpg
+    thumb: video_1_thumb.jpg
     src: What is IVF (In-Vitro Fertilization).mp4
   - 2:
     title: What are treatment options for infertility?
-    thumb: video_3_thumb.jpg
+    thumb: video_2_thumb.jpg
     src: What are treatment options for infertility.mp4
   - 3:
     title: What is a miscarriage
@@ -78,7 +78,7 @@ videos:
     src: What is a miscarriage.mp4
   - 4:
     title: What is PGD?
-    thumb: video_2_thumb.jpg
+    thumb: video_3_thumb.jpg
     src: What is PGD (Preimplantation genetic diagnosis).mp4
 request_title: Request an Appointment
 footer_navigation:
