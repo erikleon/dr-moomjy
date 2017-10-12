@@ -10,6 +10,16 @@
     height: 75vh;
   }
 
+  .filter {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: 4;
+    background: -webkit-linear-gradient(-180deg, rgb(0, 0, 0), transparent, transparent);
+    background: linear-gradient(-180deg, rgb(0, 0, 0), transparent, transparent);
+    opacity: 0.3;
+  }
+
   .background {
     background-image: url(../../images/hero.jpg);
     background-position: center;
@@ -44,7 +54,6 @@
       padding: 50px;
       background-color: $purple_rgba;
       color: $white;
-      text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
       line-height: 1.2em;
 
       @media (max-width: 768px) {
@@ -70,6 +79,7 @@
   display: none;
   background-color: $purple;
   padding: 0;
+  min-height: unset;
 
   @media (max-width: 768px) {
     display: block
@@ -83,6 +93,10 @@
       color: $white;
       text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
       line-height: 1.2em;
+
+      @media (max-width: 768px) {
+        padding: 50px 0;
+      }
 
       a {
         display: block;

@@ -38,6 +38,7 @@
           display: block;
           width: 100%;
           border: none;
+          color: $grey;
           border-bottom: 1px solid $pink;
 
           &:focus {
@@ -99,6 +100,7 @@
 
           input {
             padding: 10px 10px 10px 60px;
+            color: $grey;
           }
 
           label {
