@@ -16,9 +16,7 @@
 title: Maureen Moomjy MD. FACOG
 email: your-email@.com
 description: > # this means to ignore newlines until "navigation:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Dr. Maureen Moomjy has been providing specialized, comprehensive, and compassionate care in Fertility, Gynecology, and Reproductive Medicine for over 20 years. She offers patients Fertility Services in collaboration with NYU Fertility Center including In Vitro Fertilization (IVF), Intracytoplasmic Sperm Injection (ICSI), Egg Freezing, Preimplantation Genetic Diagnosis (PGD), and Donor Egg IVF. Additionally, she routinely performs gynecologic and reproductive surgery and guides patients through hormonal treatment options.
 navigation:
   - 0:
     title: Home
@@ -54,7 +52,7 @@ location_hours: >
   <span>wednesday</span><span>7:30am - 4:00pm</span>
   <span>thursday</span><span>7:30am - 4:00pm</span>
   <span>friday</span><span>7:30am - 4:00pm</span>
-  <span>fertility treatments</span><span></span>
+  <span><strong>fertility treatments</strong></span><span></span>
   <span>saturday</span><span>7:30am - 11:00am</span>
   <span>sunday</span><span>7:30am - 11:00am</span>
 videos_title: videos
