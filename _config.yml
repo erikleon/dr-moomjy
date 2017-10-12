@@ -16,9 +16,7 @@
 title: Maureen Moomjy MD. FACOG
 email: your-email@.com
 description: > # this means to ignore newlines until "navigation:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Dr. Maureen Moomjy has been providing specialized, comprehensive, and compassionate care in Fertility, Gynecology, and Reproductive Medicine for over 20 years. She offers patients Fertility Services in collaboration with NYU Fertility Center including In Vitro Fertilization (IVF), Intracytoplasmic Sperm Injection (ICSI), Egg Freezing, Preimplantation Genetic Diagnosis (PGD), and Donor Egg IVF. Additionally, she routinely performs gynecologic and reproductive surgery and guides patients through hormonal treatment options.
 navigation:
   - 0:
     title: Home
@@ -45,15 +43,16 @@ about_copy: >
 location_title: location
 location_address: >
   30 E 60th St, Suite 1901<br/>
-  NY NY 10022
-location_phone: "212-230-1055"
+  New York, NY 10022
+location_phone: "212.230.1055"
+location_fax: "877.832.3365"
 location_hours: >
-  <span>monday</span><span>9:00am - 4:00pm</span>
-  <span>tuesday</span><span>9:00am - 4:00pm</span>
-  <span>wednesday</span><span>9:00am - 4:00pm</span>
-  <span>thursday</span><span>9:00am - 4:00pm</span>
-  <span>friday</span><span>9:00am - 4:00pm</span>
-  <span>fertility treatments</span><span></span>
+  <span>monday</span><span>7:30am - 4:00pm</span>
+  <span>tuesday</span><span>7:30am - 4:00pm</span>
+  <span>wednesday</span><span>7:30am - 4:00pm</span>
+  <span>thursday</span><span>7:30am - 4:00pm</span>
+  <span>friday</span><span>7:30am - 4:00pm</span>
+  <span><strong>fertility treatments</strong></span><span></span>
   <span>saturday</span><span>7:30am - 11:00am</span>
   <span>sunday</span><span>7:30am - 11:00am</span>
 videos_title: videos
@@ -61,30 +60,30 @@ videos_subtitle: sub title
 videos:
   - 0:
     title: What is the procedure for a Hysteroscopy?
-    thumb: video_1_thumb.jpg
+    thumb: video_2_thumb.jpg
     src: What is the procedure for a Hysteroscopy.mp4
   - 1:
     title: What is IVF?
-    thumb: video_2_thumb.jpg
+    thumb: video_1_thumb.jpg
     src: What is IVF (In-Vitro Fertilization).mp4
   - 2:
     title: What are treatment options for infertility?
-    thumb: video_3_thumb.jpg
+    thumb: video_2_thumb.jpg
     src: What are treatment options for infertility.mp4
   - 3:
     title: What is a miscarriage
-    thumb: video_1_thumb.jpg
+    thumb: What is a miscarriage.jpg
     src: What is a miscarriage.mp4
   - 4:
     title: What is PGD?
-    thumb: video_2_thumb.jpg
+    thumb: video_3_thumb.jpg
     src: What is PGD (Preimplantation genetic diagnosis).mp4
 request_title: Request an Appointment
 footer_navigation:
   - 0:
     title: Hours and Location
     target: _self
-    slug: /#about
+    slug: /#location
   - 1:
     title: Financial Policy
     target: _blank
@@ -94,7 +93,7 @@ footer_navigation:
     target: _blank
     slug: /pdfs/Dr. Moomjy Privacy Policy.pdf
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://local.maureenmoomjy.com" # the base hostname & protocol for your site
+url: "https://www.drmoomjy.com" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown
