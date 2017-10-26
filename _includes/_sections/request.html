@@ -1,0 +1,30 @@
+<section id="request" class="request">
+  <div class="background"></div>
+  <div class="container">
+    <h1 class="section-title">request an appointment</h1>
+    <form action="https://formspree.io/scheduling@drmoomjy.com" method="POST">
+      <input type="hidden" name="_next" value="{{ site.baseurl }}" />
+      <div class="group">
+        <input type="text" name="name" required>
+        <label for="name">Name</label>
+        <div class="bar"></div>
+      </div>
+      <div class="group">
+        <input type="tel" name="phone" required>
+        <label for="phone">Phone number</label>
+        <div class="bar"></div>
+      </div>
+      <div class="group">
+        <input type="email" name="_replyto" required>
+        <label for="_replyto">Email</label>
+        <div class="bar"></div>
+      </div>
+      <div class="group datepicker">
+        <input type="text" name="date" required>
+        <label for="date">Date Requested</label>
+        <div class="bar"></div>
+      </div>
+      <input type="submit" value="Submit">
+    </form>
+  </div> <!-- .container -->
+</section>

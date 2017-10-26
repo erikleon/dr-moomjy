@@ -1,0 +1,20 @@
+<section id="videos" class="videos">
+  <div class="container">
+    <h1 class="section-title">{{ site.videos_title }}</h1>
+    <h3 class="section-subtitle">{{ site.videos[0].title }}</h3>
+    <div class="carousel">
+      {% for item in site.videos %}
+        <div class="item">
+          <img src="/images/{{ item.thumb  }}" alt="{{ item.title }}">
+          <div class="play">
+            <svg height="100px" width="100px" viewBox="0 0 200 200" alt="Play video" data-src="/videos/{{ item.src }}">
+              <circle cx="100" cy="100" r="90" fill="none" stroke-width="5" stroke="#fff"></circle>
+              <polygon points="70, 55 70, 145 145, 100" fill="none" stroke-width="5" stroke="#fff"></polygon>
+            </svg>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+    <a class="fmt-btn" href="http://www.freedommedteach.com/" target="_blank">Freedom Med Teach – IVF Injection Training Videos</a>
+  </div> <!-- .container -->
+</section>
