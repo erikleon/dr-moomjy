@@ -1,0 +1,21 @@
+<section id="about" class="about">
+  <div class="container">
+    <div class="about-copy">
+      <h1 class="section-title extrabold">{{ site.about_title }}</h1>
+      <p>{{ site.about_copy }}</p>
+    </div>
+    <div id="location" class="location">
+      <h1 class="section-title">{{ site.location_title }}</h1>
+      <div class="info">
+        <div class="address">
+          <a target="_blank" href="https://www.google.com/maps/place/Maureen+O\'Brien+Moomjy,+MD,+FACOG/@40.7747717,-73.9628629,15z/data=!4m5!3m4!1s0x0:0x4f919e9b39ae0c80!8m2!3d40.7747717!4d-73.9628629">{{ site.location_address }}</a>
+        </div>
+        <div class="phone"><span>p </span>{{ site.location_phone }}</div>
+        <div class="fax"><span>f </span>{{ site.location_fax }}</div>
+      </div>
+      {% include _sections/map.html %}
+      <h1 class="section-title">office hours</h1>
+      <div class="hours">{{ site.location_hours }}</div>
+    </div>
+  </div> <!-- .container -->
+</section>

@@ -60,7 +60,7 @@ videos_subtitle: sub title
 videos:
   - 0:
     title: What is the procedure for a Hysteroscopy?
-    thumb: video_2_thumb.jpg
+    thumb: What is Hysteroscopy.jpg
     src: What is the procedure for a Hysteroscopy.mp4
   - 1:
     title: What is IVF?
