@@ -75,6 +75,7 @@
 
     .floating-box {
       position: absolute;
+      z-index: 5;
       top: 25%;
       right: 0;
       height: auto;
