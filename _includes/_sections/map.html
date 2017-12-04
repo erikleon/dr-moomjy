@@ -3,9 +3,9 @@
   function initMap() {
     var geocoder, map;
 
-    var myLatLng = {lat: 40.7747717, lng: -73.9628629};
+    var myLatLng = {lat: 40.7637921, lng: -73.9703505};
 
-    var myOrigin = {lat: 40.7747717, lng: -73.9628629};
+    var myOrigin = {lat: 40.7637921, lng: -73.9703505};
 
     // Styles a map in grayscale mode.
     var map = new google.maps.Map(document.getElementById('map'), {
@@ -177,15 +177,22 @@
       ]
     });
 
+    var image = {
+      url: '/images/Map Location - MM.png',
+      size: new google.maps.Size(89, 89),
+      anchor: new google.maps.Point(44, 44),
+    };
+
+
     var marker = new google.maps.Marker({
       position: myLatLng,
       map: map,
-      title: "The Phillips Club",
-      icon: "/images/icon-black-map.png"
+      title: "Maureen Moomjy MD FACOG",
+      icon: image
     });
 
     var infoWindow = new google.maps.InfoWindow({
-      content:'<a target="_blank" href="https://www.google.com/maps/place/Maureen+O\'Brien+Moomjy,+MD,+FACOG/@40.7747717,-73.9628629,15z/data=!4m5!3m4!1s0x0:0x4f919e9b39ae0c80!8m2!3d40.7747717!4d-73.9628629"><strong>Maureen Moomjy MD FACOG</strong>,<br>30 E 60th St, Suite 1901,<br> New York, NY 10022</a>'
+      content:'<a target="_blank" href="https://www.google.com/maps/place/Maureen+O\'Brien+Moomjy,+MD,+FACOG/@40.7637921,-73.9703505,15z/data=!4m5!3m4!1s0x0:0x4f919e9b39ae0c80!8m2!3d40.7747717!4d-73.9628629"><strong>Maureen Moomjy MD FACOG</strong>,<br>30 E 60th St, Suite 1901,<br> New York, NY 10022</a>'
     });
 
     marker.addListener('click', function() {
